@@ -1,18 +1,20 @@
 # Práctica: Protocolo DHCP
 
-## Requisitos previos (Modificaciones manualmente en las máquinas kvm/libvirt)
+## Requisitos previos 
 
-- Tener sudo instalado.
+ Modificaciones que debemos realizar manualmente en las máquinas kvm/libvirt antes de ejecutar el playbook de ansible:
 
-- El usuario principal debe estar configurado en sudoers para poder hacer sudo sin contraseña.
+- Tener **sudo** instalado.
+
+- El usuario principal debe estar configurado en `/etc/sudoers` para poder hacer sudo sin contraseña.
 
 - Tener ssh instalado.
 
-- Tener iptables o network-manager instalado.
+- Tener **iptables** o **network-manager** instalado.
 
-- Tener la clave pública importada manualmente.
+- Tener la **clave pública** de nuestro host importada manualmente (`ssh-copy-id usuario@ip`).
 
-- Tener configurada la IP estática en la red privada sin DHCP.
+- Tener configurada la **IP estática** en la red privada sin DHCP.
 
 ## Enunciado de la práctica
 
