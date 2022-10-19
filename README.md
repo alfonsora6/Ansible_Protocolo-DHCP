@@ -8,7 +8,7 @@
 
 - El usuario principal debe estar configurado en `/etc/sudoers` para poder hacer sudo sin contraseña.
 
-- Tener ssh instalado.
+- Tener **ssh** instalado.
 
 - Tener **iptables** o **network-manager** instalado.
 
