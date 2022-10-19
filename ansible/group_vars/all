@@ -1,0 +1,15 @@
+ip_router: 10.0.0.1
+reserva_ip_cliente: 10.0.0.2
+reserva_mac_cliente: 52:54:00:b0:93:d0
+mascara_de_red: 255.255.255.0
+red_privada: 10.0.0.0/24
+red_privada_sin_mascara: 10.0.0.0
+inicio_rango_dhcp: 10.0.0.100
+fin_rango_dhcp: 10.0.0.130
+broadcast: 10.0.0.255
+puerta_enlace_dhcp: 10.0.0.1
+dns1: 8.8.8.8
+dns2: 1.1.1.1
+interfaz_externa_router: enp1s0
+int_muy_aislada_cli: enp1s0
+int_muy_aislada_router: enp3s0
