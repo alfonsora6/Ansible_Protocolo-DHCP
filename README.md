@@ -14,7 +14,7 @@
 
 - Tener la **clave pública** de nuestro host importada manualmente (`ssh-copy-id usuario@ip`).
 
-- Tener configurada la **IP estática** en la red NAT sin DHCP.
+- Tener configurada la **IP estática** en la red NAT sin DHCP en cada una de las máquinas.
 
 ## Enunciado de la práctica
 
