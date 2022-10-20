@@ -1,26 +1,28 @@
-- hosts: routers
-  become: true
-  roles:
-   - role: router
-
-- hosts: router1
-  become: true
-  roles:
-   - role: dhcp
-
-- hosts: clientes
-  become: true
-  roles:
-   - role: cliente
-
+# Se actualiza la paquetería
 - hosts: all
   become: true
   roles:
    - role: common
 
+# Se instala y configura el servidor web
 - hosts: cliente1
   become: true
   roles:
    - role: web
+
+# El router adquiere su nueva configuración de red para hacer NAT.
+- hosts: router1
+  become: true
+  roles:
+   - role: router
+   - role: dhcp-router
+
+# Los clientes adquieren la nueva configuración de red (DHCP)
+- hosts: clientes
+  become: true
+  roles:
+   - role: dhcp-cliente
+
+
 
 

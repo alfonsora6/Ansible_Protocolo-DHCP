@@ -11,11 +11,11 @@ iface lo inet loopback
 allow-hotplug enp1s0
 iface enp1s0 inet dhcp
 
-# Tarjeta de red (Aislada sin DHCP)
+# Tarjeta de red (NAT sin DHCP)
 auto enp2s0
 iface enp2s0 inet static
-        address 192.168.126.2
-        netmask 255.255.255.0
+        address {{ip_router-ansible}}
+        netmask {{mascara_de_red}}
 
 # Tarjeta de red (Muy aislada)
 auto {{int_muy_aislada_router}}
