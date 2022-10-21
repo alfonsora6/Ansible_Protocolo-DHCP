@@ -14,7 +14,7 @@ iface enp1s0 inet dhcp
 # Tarjeta de red (NAT sin DHCP)
 auto enp2s0
 iface enp2s0 inet static
-        address {{ip_router-ansible}}
+        address {{ip_router_ansible}}
         netmask {{mascara_de_red}}
 
 # Tarjeta de red (Muy aislada)
