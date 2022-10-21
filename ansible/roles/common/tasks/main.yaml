@@ -1,8 +1,0 @@
-- name: "Actualizamos el sistema"
-  apt: update_cache=yes upgrade=yes
-
-#- name: "Install alfonso ssh key"
-#  authorized_key: 
-#    user: vagrant
-#    state: present
-#    key: "{{lookup('file', '~/.ssh/id_rsa.pub')}}"
