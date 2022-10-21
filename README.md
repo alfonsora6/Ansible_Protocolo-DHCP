@@ -6,7 +6,7 @@
 
 - Tener **sudo** instalado.
 
-- El usuario principal debe estar configurado en `/etc/sudoers` para poder hacer sudo sin contraseña.
+- El usuario principal debe estar configurado en `/etc/sudoers` para poder ejecutar sudo sin contraseña.
 
 - Tener **ssh** instalado.
 
